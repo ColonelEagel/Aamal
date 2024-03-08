@@ -1,4 +1,4 @@
-/* ------ global variables ------ */
+/* ------ Global Variables ------ */
 :root {
     --main-color: #12b8b5;
     --hover-color: #0f747f;
@@ -9,16 +9,11 @@
     --main-transition: 0.3s;
 }
 
+/* ------ Global Rules ------ */
 * {
     /* border: 1px solid; */
 }
 
-
-
-/* ------ end global variables ------ */
-
-
-/* ------ start global rules ------ */
 body {
     font-family: 'Tajawal', sans-serif;
 }
@@ -28,6 +23,7 @@ a {
     cursor: pointer;
 }
 
+/* Padding Utilities */
 .p-100 {
     padding: var(--main-section-padding);
 }
@@ -40,11 +36,26 @@ a {
     padding-bottom: var(--main-section-padding);
 }
 
+/* Background Color Utilities */
 .bg-gray {
     background-color: var(--secondary-color);
-
 }
 
+.bg-blue {
+    background-color: var(--main-color);
+    transition: .5s ease-in-out;
+}
+
+.bg-blue:hover {
+    background-color: var(--hover-color);
+}
+
+/* Text Color Utilities */
+.text-blue {
+    color: var(--main-color);
+}
+
+/* Button Styles */
 .btn {
     transition: var(--main-transition) ease-in-out;
 }
@@ -54,20 +65,7 @@ a {
     background-color: var(--hover-color);
 }
 
-.bg-blue {
-    background-color: var(--main-color);
-    transition: .5s ease-in-out;
-
-}
-
-.bg-blue:hover {
-    background-color: var(--hover-color);
-}
-
-.text-blue {
-    color: var(--main-color);
-}
-
+/* Border Radius Utilities */
 .rad {
     border-radius: var(--main-radius);
 }
@@ -80,18 +78,21 @@ a {
     border-radius: 0 0 var(--main-radius) var(--main-radius);
 }
 
+/* Border Color Utility */
 .border-blue {
     border: 1px solid var(--main-color);
 }
 
+/* Glass Effect Utility */
 .glass {
     background-color: var(--transparent-color);
 }
 
-/* ------ end global rules ------ */
+/* ------ End Global Rules ------ */
 
-/* ------ start navbar ------ */
+/* ------ Navbar Styles ------ */
 
+/* Navbar Container */
 .navbar {
     position: absolute;
     top: 0;
@@ -103,15 +104,18 @@ a {
     -webkit-backdrop-filter: blur(4.3px);
 }
 
+/* Navbar Links */
 .nav-link {
     color: white !important;
     font-size: 12px;
 }
-.contact-nav{
+
+/* Contact Nav */
+.contact-nav {
     height: 50px;
 }
 
-.contact-nav::after{
+.contact-nav::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -121,11 +125,14 @@ a {
     left: 0;
     transition: .5s ease-in-out;
 }
-.navbar-toggler{
+
+/* Navbar Toggler */
+.navbar-toggler {
     width: 50px;
     text-align: center;
 }
 
+/* Navbar Link Hover Styles */
 .link:hover,
 .active,
 .nav-link:hover {
@@ -133,6 +140,7 @@ a {
     font-weight: bolder;
 }
 
+/* Blue Filter Animation */
 .filter-blue {
     transition: .25s ease-in-out;
 }
@@ -141,19 +149,22 @@ a {
     filter: invert(74%) sepia(36%) saturate(6225%) hue-rotate(134deg) brightness(91%) contrast(86%);
 }
 
-/* ------ end navbar ------ */
+/* ------ End Navbar Styles ------ */
 
-/* ------ start carousel ------ */
+/* ------ Carousel Styles ------ */
+
+/* Carousel Container */
 #carouselExampleCaptions {
     height: 80vh;
     position: relative;
 }
 
-/* #carouselExampleCaptions img {
-object-fit: none;
-object-position: center center;
-width: 100%;
-} */
+#carouselExampleCaptions img {
+    object-fit: fill;
+    object-position: center center;
+}
+
+/* Black Overlay Layout */
 .layout {
     position: absolute;
     top: 0;
@@ -166,12 +177,12 @@ width: 100%;
     border-radius: var(--main-radius);
 }
 
+/* Carousel Caption */
 .carousel-caption {
     position: absolute;
     z-index: 100;
     top: 39%;
     right: 17%;
-    /* transform: translate(50%, -50%); */
     color: white;
     width: 53%;
     font-size: 20px;
@@ -179,6 +190,7 @@ width: 100%;
     text-align: start;
 }
 
+/* Carousel Controllers */
 .carousel-controllers {
     position: absolute;
     bottom: 3%;
@@ -191,6 +203,7 @@ width: 100%;
     gap: 10px;
 }
 
+/* Carousel Button Styles */
 button.carousel-btn {
     color: white;
     background-color: transparent;
@@ -209,17 +222,16 @@ button.carousel-btn:hover {
     border-color: var(--main-color);
 }
 
+/* Responsive Styles */
 @media (min-width: 481px) {
     button.carousel-btn {
         width: 30px;
         height: 30px;
         font-size: 15px;
     }
-    .carousel-caption{
+    .carousel-caption {
         font-size: 30px;
     }
-
-
 }
 
 @media (min-width: 769px) {
@@ -228,16 +240,19 @@ button.carousel-btn:hover {
         height: 50px;
         font-size: 15px;
     }
-    .carousel-caption{
+    .carousel-caption {
         font-size: 40px;
     }
-
+    #carouselExampleCaptions img {
+        object-fit: cover;
+        object-position: center center;
+    }
 }
 
-/* ------ end carousel ------ */
+/* ------ End Carousel Styles ------ */
 
-/* ------ start certifications ------ */
 
+/* ------ Certifications Styles ------ */
 .image {
     max-width: 100%;
     height: auto;
@@ -251,49 +266,53 @@ button.carousel-btn:hover {
 .image.bottom {
     bottom: -100px;
 }
+/* ------ End Certifications Styles ------ */
 
-/*  ------ end certifications ------ */
-/* ------ start about ------ */
-.about-img{
+
+/* ------ About Section Styles ------ */
+.about-img {
     position: relative;
     animation: up-and-down 5s linear infinite;
 }
-/*  ------ end about ------ */
-/* ------ start Media library ------ */
+/* ------ End About Section Styles ------ */
+
+
+/* ------ Media Library Styles ------ */
 section#media {
     background-image: url("../Media/Media-library-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* ------ End Media Library Styles ------ */
 
 
-
-/* ------ end Media library ------ */
-
-/*  ------ start news ------ */
+/* ------ News Section Styles ------ */
 section#news .badge {
     right: 5%;
     top: 7%;
-
 }
-.card{
+
+.card {
     box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
     background-color: white;
     border-radius: 6px;
     overflow: hidden;
     transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
+
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
-  }
+}
 
-  .news-card:hover .btn .fa-arrow-left {
+.news-card:hover .btn .fa-arrow-left {
     animation: moving-arrow 0.6s linear infinite;
-  }
-  
-/*  ------ start partners ------ */
+}
+/* ------ End News Section Styles ------ */
+
+
+/* ------ Partners Section Styles ------ */
 section#partners .partner-card {
     border: 1px solid rgba(91, 88, 88, 0.248);
     height: 150px;
@@ -311,8 +330,10 @@ section#partners .partner-card img {
     object-fit: contain;
     object-position: center center;
 }
+/* ------ End Partners Section Styles ------ */
 
-/* ------ start footer ------ */
+
+/* ------ Footer Styles ------ */
 footer {
     background-color: black;
     color: white;
@@ -335,24 +356,22 @@ footer .social a {
 footer .social a:hover {
     background-color: var(--main-color);
 }
+/* ------ End Footer Styles ------ */
 
-/* ------ end footer ------ */
 
-/* start animation */
-
+/* ------ Animation Styles ------ */
 @keyframes moving-arrow {
     100% {
-      transform: translateX(-10px);
+        transform: translateX(-10px);
     }
-  }
+}
 
-  @keyframes up-and-down {
-    0%,
-    100% {
-      top: 0;
+@keyframes up-and-down {
+    0%, 100% {
+        top: 0;
     }
     50% {
-      top: -50px;
+        top: -50px;
     }
-  }
-  /* end animation */
+}
+/* ------ End Animation Styles ------ */
