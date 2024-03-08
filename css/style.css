@@ -1,0 +1,358 @@
+/* ------ global variables ------ */
+:root {
+    --main-color: #12b8b5;
+    --hover-color: #0f747f;
+    --transparent-color: rgb(0 0 0 / 33%);
+    --secondary-color: #f0f0f0;
+    --main-section-padding: 100px;
+    --main-radius: 15px;
+    --main-transition: 0.3s;
+}
+
+* {
+    /* border: 1px solid; */
+}
+
+
+
+/* ------ end global variables ------ */
+
+
+/* ------ start global rules ------ */
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.p-100 {
+    padding: var(--main-section-padding);
+}
+
+.p-top-100 {
+    padding-top: var(--main-section-padding);
+}
+
+.p-bottom-100 {
+    padding-bottom: var(--main-section-padding);
+}
+
+.bg-gray {
+    background-color: var(--secondary-color);
+
+}
+
+.btn {
+    transition: var(--main-transition) ease-in-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--hover-color);
+}
+
+.bg-blue {
+    background-color: var(--main-color);
+    transition: .5s ease-in-out;
+
+}
+
+.bg-blue:hover {
+    background-color: var(--hover-color);
+}
+
+.text-blue {
+    color: var(--main-color);
+}
+
+.rad {
+    border-radius: var(--main-radius);
+}
+
+.rad-top {
+    border-radius: var(--main-radius) var(--main-radius) 0 0;
+}
+
+.rad-bottom {
+    border-radius: 0 0 var(--main-radius) var(--main-radius);
+}
+
+.border-blue {
+    border: 1px solid var(--main-color);
+}
+
+.glass {
+    background-color: var(--transparent-color);
+}
+
+/* ------ end global rules ------ */
+
+/* ------ start navbar ------ */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 12px;
+}
+.contact-nav{
+    height: 50px;
+}
+
+.contact-nav::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.204);
+    top: 45px;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler{
+    width: 50px;
+    text-align: center;
+}
+
+.link:hover,
+.active,
+.nav-link:hover {
+    color: var(--main-color) !important;
+    font-weight: bolder;
+}
+
+.filter-blue {
+    transition: .25s ease-in-out;
+}
+
+.filter-blue:hover {
+    filter: invert(74%) sepia(36%) saturate(6225%) hue-rotate(134deg) brightness(91%) contrast(86%);
+}
+
+/* ------ end navbar ------ */
+
+/* ------ start carousel ------ */
+#carouselExampleCaptions {
+    height: 80vh;
+    position: relative;
+}
+
+/* #carouselExampleCaptions img {
+object-fit: none;
+object-position: center center;
+width: 100%;
+} */
+.layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: .5;
+    border-radius: var(--main-radius);
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 100;
+    top: 39%;
+    right: 17%;
+    /* transform: translate(50%, -50%); */
+    color: white;
+    width: 53%;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: start;
+}
+
+.carousel-controllers {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button.carousel-btn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+button.carousel-btn:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+@media (min-width: 481px) {
+    button.carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .carousel-caption{
+        font-size: 30px;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    button.carousel-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .carousel-caption{
+        font-size: 40px;
+    }
+
+}
+
+/* ------ end carousel ------ */
+
+/* ------ start certifications ------ */
+
+.image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image.top {
+    top: -100px;
+}
+
+.image.bottom {
+    bottom: -100px;
+}
+
+/*  ------ end certifications ------ */
+/* ------ start about ------ */
+.about-img{
+    position: relative;
+    animation: up-and-down 5s linear infinite;
+}
+/*  ------ end about ------ */
+/* ------ start Media library ------ */
+section#media {
+    background-image: url("../Media/Media-library-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ------ end Media library ------ */
+
+/*  ------ start news ------ */
+section#news .badge {
+    right: 5%;
+    top: 7%;
+
+}
+.card{
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  }
+
+  .news-card:hover .btn .fa-arrow-left {
+    animation: moving-arrow 0.6s linear infinite;
+  }
+  
+/*  ------ start partners ------ */
+section#partners .partner-card {
+    border: 1px solid rgba(91, 88, 88, 0.248);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#partners .partner-card img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    object-position: center center;
+}
+
+/* ------ start footer ------ */
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .social a {
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin: 0 10px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+footer .social a:hover {
+    background-color: var(--main-color);
+}
+
+/* ------ end footer ------ */
+
+/* start animation */
+
+@keyframes moving-arrow {
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+
+  @keyframes up-and-down {
+    0%,
+    100% {
+      top: 0;
+    }
+    50% {
+      top: -50px;
+    }
+  }
+  /* end animation */

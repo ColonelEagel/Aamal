@@ -1,71 +1,203 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>أعمال</title>
-  </head>
 
-  <body>
-    <!-- --------------------------- Header  ---------------------------- -->
-    <header>
-      <!-- --------------------------- Navbar  ---------------------------- -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- --------------------------- font awesome ---------------------------- -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- --------------------------- Bootstrap ---------------------------- -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- google font font-family: 'Tajawal', sans-serif; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+  rel="stylesheet" />
+  <!-- --------------------------- Animate.css library style ------------------- -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+
+  <!-- --------------------------- main css style ------------------- -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>معهد الادارة العام أعمال</title>
+</head>
+
+<body>
+  <!-- --------------------------- Header  ---------------------------- -->
+  <header>
+    <!-- --------------------------- Navbar  ---------------------------- -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light text-light pt-0 glass">
+
+ </nav> -->
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light text-light pt-0 glass overflow-hidden" >
+      <div class="container flex-column pt-0">
+        <div class="row mx-auto d-none d-md-flex w-100 justify-content-center align-items-center contact-nav fs-6 ">
+          <div class="w-25 text-center text-nowrap" dir="ltr">
+            <img src="Media/mail-alt-svgrepo-com.svg" alt="" width="20" />
+            Customers@ipa.edu.sa
+          </div>
+          <div class="w-75 border-end border-white d-flex align-items-center justify-content-between">
+            <a href="tel:+9668001248877" class="link link-light text-center" dir="ltr">
+              <img src="Media/phone-svgrepo-com.svg" alt="" width="20" />
+              <span>
+                8001248877
+              </span>
+            </a>
+            <p class="text-center">
+
+              <span class="text-blue fw-bold">تابعنا على :</span>
+
+              <a href="https://www.facebook.com/ipaconnect" class="link"><img src="Media/facebook-svgrepo-com.svg"
+                  alt=" facebook logo " width="20" class="filter-blue" /></a>
+              <a href="https://twitter.com/IPAConnect" class="link">
+                <img class="filter-blue" src="Media/icons8-twitterx1.svg" alt=" twitter (X) logo " width="20" />
+              </a>
+              <a href="#" class="link">
+                <img class="filter-blue" src="Media/pinterest-180-svgrepo-com.svg" alt=" pinterest logo " width="20" />
+              </a>
+              <a href="https://www.linkedin.com/company/institute-of-public-administration" class="link">
+                <img class="filter-blue" src="Media/linkedin-linked-in-svgrepo-com.svg" alt=" linkedin logo"
+                  width="20" />
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row mx-auto w-100">
+          <div class="d-flex align-items-center justify-content-center col-2">
+
+            <a class="navbar-brand" href="#">
+              <img src="Media/logo1.png" alt="لوجو معهد الادارة" width="50" height="50" />
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="Media/logo-transparent.png" alt="" width="50" height="50" />
+            </a>
+          </div>
+          <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon w-100"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse col-8 " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center justify-content-center gap-2">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >الرئيسية</a
-                >
+                <a class="nav-link text-lg-nowrap text-center active" aria-current="page" href="#">الرئيسية</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-lg-nowrap text-center" href="#"> عن المعهد</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-lg-nowrap text-center" href="#">الشهادات الإحترافي</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-lg-nowrap text-center" href="#">الشهادات الإحترافية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-lg-nowrap text-center" href="#">المكتبة الإعلامية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-lg-nowrap text-center" href="#">أخبار المعهد</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-lg-nowrap text-center" href="#">الإستفسارات</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn rad border-blue">
+                  <img src="Media/globe-grid-svgrepo-com.svg" alt="" width="20" />
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn rad border-blue text-nowrap mx-1 fw-bold text-light bg-blue">
+                  دخول
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn rad border-blue text-nowrap fw-bold text-light bg-blue">
+                  مستخدم جديد
+                </button>
               </li>
             </ul>
           </div>
-          <a class="navbar-brand" href="#">
-            <img src="Media/لوجو اعمال-01.png" alt="" width="50" height="50" />
-          </a>
-          <a class="navbar-brand" href="#">
-            <img
-              src="Media/لوجو معهد الادارة.png"
-              alt=""
-              width="50"
-              height="50"
-            />
-          </a>
         </div>
-      </nav>
-      <!-- --------------------------- Carousel  ---------------------------- -->
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+      </div>
+    </nav>
+    <!-- --------------------------- Carousel  ---------------------------- -->
+    <div id="carouselExampleCaptions" class="carousel slide overflow-hidden">
+      <div class="carousel-inner h-100">
+        <div class="layout"></div>
+        <div class="carousel-item h-100  active w-100">
+          <img src="Media/Carousel.jpeg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption">
+            <h5 class="fs-6">
+              معهد الإدارة العامة
+
+            </h5>
+            <p>
+              شهادات إحترافية تنمى الموارد البشرية
+              وتحلق بها نحو المستقبل الواعد.
+            </p>
+            <button class="btn rad text-light fw-bold btn btn-outline-secondary px-4 ">
+              تواصل معنا
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="Media/image(1).jpg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption ">
+            <h5 class="fs-6">
+              معهد الإدارة العامة
+
+            </h5>
+            <p>
+              شهادات إحترافية تنمى الموارد البشرية
+              وتحلق بها نحو المستقبل الواعد.
+            </p>
+            <button class="btn rad text-light fw-bold btn btn-outline-secondary px-4 ">
+              تواصل معنا
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="Media/53eeaacd-877b-4495-8db8-b982ba604605.jpeg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption ">
+            <h5 class="fs-6">
+              معهد الإدارة العامة
+
+            </h5>
+            <p>
+              شهادات إحترافية تنمى الموارد البشرية
+              وتحلق بها نحو المستقبل الواعد.
+            </p>
+            <button class="btn rad text-light fw-bold btn btn-outline-secondary px-4 ">
+              تواصل معنا
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controllers"> <button class="carousel-btn next" type="button"
+          data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <button class="carousel-btn prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+      </div>
+    </div>
+    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item">
             <img
@@ -85,251 +217,448 @@
             <img src="Media/Carousel.jpeg" class="d-block w-100" alt="..." />
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <button class="carousel-btn next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button> 
+          <button class="carousel-btn prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+      </div> -->
+  </header>
+
+  <!-- ---------------------------  Certifications ---------------------------- -->
+  <section id="certifications" class="bg-gray p-top-100 p-bottom-100 overflow-hidden">
+    <!-- ---------------------------  top image ---------------------------- -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col col-md-7">
+          <img src="Media/top-img-removebg-preview.png" alt="" class="image top" />
+        </div>
+      </div>
+      <!-- ---------------------------  Head ---------------------------- -->
+      <div class="text-center">
+        <h3 class="fs-6 text-blue fw-bold">الشهادات الاحترافية</h3>
+        <p class="fs-3 fw-bolder">الشهادات المقدمة من قبل مركز الاعمال</p>
+      </div>
+      <!-- --------------------------- certifications grid ---------------------------- -->
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
+          <div class="card h-100 border rad" data-aos="flip-right"  data-aos-duration="1500">
+            <img src="Media/CBP.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column text-center align-items-center">
+              <h5 class="card-title">
+                شهادة أخصائي محترف في القيادة الإدارية CBP- LS
+              </h5>
+              <p class="card-text">
+                تزويد المتدربين بالمبادئ والمفاهيم والمنهجيات الأساسية في مجال
+                القيادة الإدارية <br />
+                وذلك من خلال تدريبات عملية وسيناريوهات محاكية لمواقف الحياة
+                الحقيقية بهدف تطوير مهارات المتدربين القيادية واكسابهم أساسيات
+                القيادة المناسبة والفعالة في بيئات العمل المختلفة.
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder hover">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5" data-aos="flip-left" data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/ACB.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">
+                شهادة محترف معتمد من أدوبي في التصميم ACP
+              </h5>
+              <p class="card-text">
+                دعم احتياجات السوق المحلية بأفراد ذوي مهارات عالية في برامج
+                التصميم الجرافيك <br />
+                حيث تمنحهم القدرة على العمل في بيئة مختصة بالتصميم، مما يقدم
+                الدعم للمؤسسات والشركات في هذا المجال وذلك بعدم اللجوء إلى
+                جهات خارجية للتصميم مما يقلل من التكاليف ويزيد من معدل
+                الإنتاج.
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5"data-aos="flip-right" data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/CMA.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">المحاسب الإداري المعتمد CMA</h5>
+              <p class="card-text">
+                تزويد الفرد بالخبرة الإدارية والمالية اللازمة ليصبح مؤهلا
+                لإدارة التقارير المالية بالمؤسسات وتحديد الفرص الاستثمارية
+                وإداراتها مع تقديم الرؤى والاستشارات المالية لأصحاب القرار
+                بالإضافة إلى المساعدة في التغلب على المخاطر الداخلية والخارجية
+                للشركات وضمان امتثالها للقوانين التشريعية والقواعد التنظيمية
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5" data-aos="flip-left" data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/CIA.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">شهادة المدقق الداخلي CIA</h5>
+              <p class="card-text">
+                تساعد هذه الشهادة في إعداد جيل جديد من المدققين الداخليين
+                العرب المؤهلين تأهيلاً مهنيا عالميا<br />
+                لمواجهة التحديات الاقتصادية التي يواجهها العالم العربي في عصر
+                العولمة.
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5"data-aos="flip-right"  data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/CBP.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">شهادة تكنولوجيا الحاسب الآلي CBP-CT</h5>
+              <p class="card-text">
+                تهيئة المتدربين وبالأخص الموظفين الجدد في مجال الحاسب الآلي
+                إلي سوق العمل الحديث <br />
+                حيث يلقي الضوء على المبادئ والمفاهيم والعمليات الأساسية خلال
+                تعريفهم على أحدث العمليات في مجال الحاسب الآلي والمهارات
+                والمنهجيات التي تتيح لهم الاستفادة القصوى من خبراتهم
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5" data-aos="flip-left"   data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/BMP.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">ادارة المشاريع الاحترافية PMP</h5>
+              <p class="card-text">
+                تعزيز المعارف وتنمية المهارات الإدارية والقيادية بالإضافة إلى
+                التعرف على استراتيجيات ومنهجيات إدارة المشاريع وكيفية تطبيقها
+                بفاعلية داخل المؤسسات <br />وتعتبر من أقدم الشهادات الاحترافية
+                وأكثرها تقديراً على مستوى العالم في مجال إدارة المشاريع، وهي
+                أحد أهم معايير تقييم مديري المشاريع في جميع أنحاء العالم
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5"data-aos="flip-right"  data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/MOS.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">أخصائي مايكروسوفت أوفيس MOS</h5>
+              <p class="card-text">
+                دعم المتدربين على إتقان برامج Microsoft office والتعريف
+                بأساسيات ومهارات كل برنامج وأدواته ومميزاته والكيفية الصحيحة
+                لتفعيله بما يحقق الاستفادة القصوى من الإمكانيات الخاصة
+                بالبرامج في تحسين أعمالهم <br />
+                ويعتبر هذا البرنامج مؤهلا لاجتياز اختبار الشهادة المعتمدة
+                دوليا والنجاح فيها للحصول على شهادة MOS.
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5" data-aos="flip-left"  data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/CILT.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">
+                الشهادة الدولية في اللوجستيات والنقل CILT
+              </h5>
+              <p class="card-text">
+                تعد الشهادة الدولية في اللوجستيات والنقل CILT المعتمدة من معهد
+                تشارترد للوجستيات والنقل (المملكة المتحدة) نقطة انطلاق نحو دور
+                قيادي استراتيجي في هذا المجال. يمنح البرنامج التدريبي CILT -
+                المستوى 5 في الخدمات اللوجستية والنقل المهارات اللازمة
+                والإحتياجات الحديثة لإحداث فرق لدى محترفيه من مختلف التخصصات
+                وفي عدة قطاعات
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5"data-aos="flip-right"  data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/CEH.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">شهادة الهاكر الأخلاقي CEH</h5>
+              <p class="card-text">
+                تعتبر دورة CEH الأكثر تقدما في العالم مع 20 مجال من أحدث
+                مجالات الأمن التي يرغب أي فرد في معرفتها <br />
+                عندما يخططون لتعزيز وضع أمن المعلومات في مؤسستهم.
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-3 mb-5" data-aos="flip-left"   data-aos-duration="1500">
+          <div class="card h-100 border rad">
+            <img src="Media/CYPER.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title">
+                شهادة الأمن السيبراني CYBER SERURITY +
+              </h5>
+              <p class="card-text">
+                أول شهادة امنية يجب أن تكسبها في مجال أمن المعلومات أو الأمن
+                السيبراني وتغطي مجموعة واسعة من ممارسات الأمان للمبتدئين
+                وتساعد على بناء شبكات وانظمة أكثر أمانا تحظى باحترام واسع
+                باعتبارها شهادة أمان للمبتدئين ومعترف بها دوليا.
+              </p>
+              <a href="#" class="btn btn-outline-secondary p-2 w-50 rad mt-auto fw-bolder">تعرف على المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------- All certifications Button ---------------------------- -->
+      <div class="d-flex justify-content-center" data-aos="fade-up"   data-aos-duration="1500">
+        <button class="btn px-5 py-3 rad mt-auto fw-bolder bg-blue text-light">
+          عرض جميع الشهادات
         </button>
       </div>
-    </header>
-
-    <!-- ---------------------------  Certifications ---------------------------- -->
-    <section id="certifications">
-      <!-- ---------------------------  Head ---------------------------- -->
-      <div class="container">
-        <div class="text-center">
-          <h3>الشهادات الاحترافية</h3>
-          <p>الشهادات المقدمة من قبل مركز الاعمال</p>
+      <div class="row justify-content-center">
+        <div class="col col-md-7 mt-5">
+          <img src="Media/bottomimg-removebg-preview.png" alt="" class="image bottom" />
         </div>
-        <!-- --------------------------- certifications grid ---------------------------- -->
-        <div class="row row-cols-1 row-cols-md-3">
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/CBP.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">
-                  شهادة أخصائي محترف في القيادة الإدارية CBP- LS
-                </h5>
-                <p class="card-text">
-                  تزويد المتدربين بالمبادئ والمفاهيم والمنهجيات الأساسية في مجال
-                  القيادة الإدارية <br />
-                  وذلك من خلال تدريبات عملية وسيناريوهات محاكية لمواقف الحياة
-                  الحقيقية بهدف تطوير مهارات المتدربين القيادية واكسابهم أساسيات
-                  القيادة المناسبة والفعالة في بيئات العمل المختلفة.
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
+      </div>
+    </div>
+  </section>
+  <!-- ---------------------------  About ---------------------------- -->
+  <section id="about" class="p-top-100 pb-5 overflow-hidden">
+    <div class="container">
+      <div class="row justify-content-center align-items-center g-4 flex-column flex-md-row">
+        <!-- --------------------------- img ---------------------------- -->
+        <div class="col" data-aos="fade-left"   data-aos-duration="1500">
+          <div class="img d-flex justify-content-center justify-content-md-end about-img">
+            <img src="Media/About.png" alt="" class="w-75" />
+          </div>
+        </div>
+
+        <!-- --------------------------- content ---------------------------- -->
+        <div class="col text-center text-md-end"  data-aos="fade-right"   data-aos-duration="1500">
+          <h2 class="fw-bold fs-6 text-blue">كل شئ عن المعهد</h2>
+          <h3 class="fs-3 fw-bolder">
+            معهد الإدارة العامة <br />
+            بالتعاون مع مركز ريادة الأعمال
+          </h3>
+          <p class="fs-6 fw-light">
+            إن الرؤية الطموحة للمملكة العربية السعودية 2030 تمثل تحدياً
+            تاريخياً لبناء وتطوير القيادات الإدارية لذلك قدمت أكاديمية تطوير
+            القياداة مجموعة من الحلول والبرامج القيادية لبناء وتطوير كافة
+            مستويات القيادات الإدارية لتتولى قيادة مسارات التنمية الشاملة
+            والانطلاق بها نحو المستقبل الواعد.
+          </p>
+          <div class="row">
+            <div class="col text-end">
+              <p>
+                <img src="Media/done-svgrepo-com.svg" alt="" width="20" class="float-end ms-1" />
+                سهولة
+              </p>
+              <p class="">
+                <img src="Media/done-svgrepo-com.svg" alt="" width="20" class="float-end ms-1" />
+                عشرات التخصصات
+              </p>
+            </div>
+            <div class="col">
+              <p class="">
+                <img src="Media/done-svgrepo-com.svg" alt="" width="20" class="float-end ms-1" />
+                مدربون احترافيون
+              </p>
+              <p class="">
+                <img src="Media/done-svgrepo-com.svg" alt="" width="20" class="float-end ms-1" />
+                شهادات معتمدة
+              </p>
             </div>
           </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/ACB.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">
-                  شهادة محترف معتمد من أدوبي في التصميم ACP
-                </h5>
-                <p class="card-text">
-                  دعم احتياجات السوق المحلية بأفراد ذوي مهارات عالية في برامج
-                  التصميم الجرافيك <br />
-                  حيث تمنحهم القدرة على العمل في بيئة مختصة بالتصميم، مما يقدم
-                  الدعم للمؤسسات والشركات في هذا المجال وذلك بعدم اللجوء إلى
-                  جهات خارجية للتصميم مما يقلل من التكاليف ويزيد من معدل
-                  الإنتاج.
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
+          <button class="btn btn-outline-secondary px-5 py-2 rad fw-bolder mt-5"  data-aos="fade-up"   data-aos-duration="1500">
+            عرض المزيد من التفاصيل
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------  Media library ---------------------------- -->
+  <section id="media" class="p-top-100 p-bottom-100 text-center overflow-hidden">
+    <div class="container">
+      <div class="row flex-column flex-md-row gap-5 align-items-center justify-content-evenly text-light fs-6">
+        <div class="col">
+        <span class="fw-bolder fs-2 " ><span class="counter" data-target="10000">10,000</span>+</span><br />عدد المدربين
+
+        </div>
+        <div class="col">
+          <span class="fw-bolder fs-2 " ><span class="counter" data-target="45000">45,000</span>+</span><br />عدد المتدربين
+        </div>
+        <div class="col">
+          <span class="fw-bolder fs-2 " ><span class="counter" data-target="28000">28,000</span>+</span><br />عدد الشهادات
+        </div>
+        <div class="col">
+          <span class="fw-bolder fs-2 ">%<span class="counter" data-target="74">74</span></span><br />معدل الرضا
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------  Latest News ---------------------------- -->
+  <section id="news" class="p-top-100 p-bottom-100 bg-gray overflow-hidden">
+    <div class="container">
+      <div class="text-center">
+        <h3 class="fs-6 text-blue fw-bold">الأخبار</h3>
+        <p class="fs-1 fw-bolder">اخر أخبار مركز الأعمال</p>
+      </div>
+      <div class="row flex-column justify-content-center align-items-center flex-md-row gap-md-4 overflow-hidden">
+        <div class="card col-md-3  text-end rad p-0 news-card " data-aos="slide-down" data-aos-once="false"  >
+          <span class="badge position-absolute bg-light text-dark rounded-pill "> معرفة</span>
+          <img src="Media/news.jpeg" class="card-img-top rad-top " alt="..." />
+          <div class="card-body ">
+            <h5 class="card-title fs-6 fw-light">ابريل . 2023</h5>
+            <p class="card-text fw-bolder fs-lg-5 text-break">
+
+              برعاية سمو أمير نجران، لقاء
+              <br />
+               <span class="text-nowrap">"تطوير القيادات الشابة"</span> بالشراكة مع
+              إمارة منطقة نجران
+            </p>
+            <a href="#" class="btn text-center">عرض المزيد <i class="fa-solid fa-arrow-left"></i></a>
           </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/CMA.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">المحاسب الإداري المعتمد CMA</h5>
-                <p class="card-text">
-                  تزويد الفرد بالخبرة الإدارية والمالية اللازمة ليصبح مؤهلا
-                  لإدارة التقارير المالية بالمؤسسات وتحديد الفرص الاستثمارية
-                  وإداراتها مع تقديم الرؤى والاستشارات المالية لأصحاب القرار
-                  بالإضافة إلى المساعدة في التغلب على المخاطر الداخلية والخارجية
-                  للشركات وضمان امتثالها للقوانين التشريعية والقواعد التنظيمية
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
+        </div>
+        <div class="card col-md-3  text-end rad p-0 news-card "  data-aos="slide-up" data-aos-once="false"  >
+          <span class="badge position-absolute bg-light text-dark rounded-pill "> تكنولوجيا</span>
+          <img src="Media/news1.jpeg" class="card-img-top rad-top " alt="..." />
+          <div class="card-body">
+            <h5 class="card-title fs-6 fw-light">يوليو . 2023</h5>
+            <p class="card-text fw-bolder fs-lg-5 text-break">
+              معهد الإدارة العامة ينظم ملتقى <br /> "إدارة المنظمات في القطاع غير
+              الربحي"
+            </p>
+            <a href="#" class="btn text-center">عرض المزيد <i class="fa-solid fa-arrow-left"></i></a>
           </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/CIA.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">شهادة المدقق الداخلي CIA</h5>
-                <p class="card-text">
-                  تساعد هذه الشهادة في إعداد جيل جديد من المدققين الداخليين
-                  العرب المؤهلين تأهيلاً مهنيا عالميا<br />
-                  لمواجهة التحديات الاقتصادية التي يواجهها العالم العربي في عصر
-                  العولمة.
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/CBP.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">شهادة تكنولوجيا الحاسب الآلي CBP-CT</h5>
-                <p class="card-text">
-                  تهيئة المتدربين وبالأخص الموظفين الجدد في مجال الحاسب الآلي
-                  إلي سوق العمل الحديث <br />
-                  حيث يلقي الضوء على المبادئ والمفاهيم والعمليات الأساسية خلال
-                  تعريفهم على أحدث العمليات في مجال الحاسب الآلي والمهارات
-                  والمنهجيات التي تتيح لهم الاستفادة القصوى من خبراتهم
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/BMP.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">ادارة المشاريع الاحترافية PMP</h5>
-                <p class="card-text">
-                  تعزيز المعارف وتنمية المهارات الإدارية والقيادية بالإضافة إلى
-                  التعرف على استراتيجيات ومنهجيات إدارة المشاريع وكيفية تطبيقها
-                  بفاعلية داخل المؤسسات <br />وتعتبر من أقدم الشهادات الاحترافية
-                  وأكثرها تقديراً على مستوى العالم في مجال إدارة المشاريع، وهي
-                  أحد أهم معايير تقييم مديري المشاريع في جميع أنحاء العالم
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/MOS.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">أخصائي مايكروسوفت أوفيس MOS</h5>
-                <p class="card-text">
-                  دعم المتدربين على إتقان برامج Microsoft office والتعريف
-                  بأساسيات ومهارات كل برنامج وأدواته ومميزاته والكيفية الصحيحة
-                  لتفعيله بما يحقق الاستفادة القصوى من الإمكانيات الخاصة
-                  بالبرامج في تحسين أعمالهم <br />
-                  ويعتبر هذا البرنامج مؤهلا لاجتياز اختبار الشهادة المعتمدة
-                  دوليا والنجاح فيها للحصول على شهادة MOS.
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/CILT.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">
-                  الشهادة الدولية في اللوجستيات والنقل CILT
-                </h5>
-                <p class="card-text">
-                  تعد الشهادة الدولية في اللوجستيات والنقل CILT المعتمدة من معهد
-                  تشارترد للوجستيات والنقل (المملكة المتحدة) نقطة انطلاق نحو دور
-                  قيادي استراتيجي في هذا المجال. يمنح البرنامج التدريبي CILT -
-                  المستوى 5 في الخدمات اللوجستية والنقل المهارات اللازمة
-                  والإحتياجات الحديثة لإحداث فرق لدى محترفيه من مختلف التخصصات
-                  وفي عدة قطاعات
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/CEH.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">شهادة الهاكر الأخلاقي CEH</h5>
-                <p class="card-text">
-                  تعتبر دورة CEH الأكثر تقدما في العالم مع 20 مجال من أحدث
-                  مجالات الأمن التي يرغب أي فرد في معرفتها <br />
-                  عندما يخططون لتعزيز وضع أمن المعلومات في مؤسستهم.
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border rounded-3">
-              <img src="Media/CYPER.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">
-                  شهادة الأمن السيبراني CYBER SERURITY +
-                </h5>
-                <p class="card-text">
-                  أول شهادة امنية يجب أن تكسبها في مجال أمن المعلومات أو الأمن
-                  السيبراني وتغطي مجموعة واسعة من ممارسات الأمان للمبتدئين
-                  وتساعد على بناء شبكات وانظمة أكثر أمانا تحظى باحترام واسع
-                  باعتبارها شهادة أمان للمبتدئين ومعترف بها دوليا.
-                </p>
-                <a href="#" class="btn btn-outline-secondary rounded-3 mt-auto"
-                  >تعرف على المزيد</a
-                >
-              </div>
-            </div>
+        </div>
+        <div class="card col-md-3  text-end rad p-0 news-card " data-aos="slide-down" data-aos-once="false"  >
+          <span class="badge position-absolute bg-light text-dark rounded-pill "> رياضة</span>
+          <img src="Media/news2.jpeg" class="card-img-top rad-top " alt="..." />
+          <div class="card-body">
+            <h5 class="fs-6 fw-light-title">يناير, 2024</h5>
+            <p class="card-text fw-bolder fs-lg-5 text-break">
+              معالي الأمين العام لمجلس التعاون لدول الخليج العربية يزور معهد
+              الإدارة العامة
+            </p>
+            <a href="#" class="btn text-center">عرض المزيد <i class="fa-solid fa-arrow-left"></i></a>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- --------------------------- All certifications Button ---------------------------- -->
-    </section>
-    <!-- ---------------------------  About ---------------------------- -->
-    <section id="about">
-      <!-- --------------------------- img ---------------------------- -->
+  <!-- ---------------------------  Partners ---------------------------- -->
+  <section id="partners" class="p-top-100 p-bottom-100 overflow-hidden">
+    <div class="container">
+      <h3 class=" fs-1 fw-bolder text-center mb-5">شركائنا في تقديم المعرفة</h3>
+      <div class="row flex-column flex-md-row align-items-center justify-content-center gap-3">
+        <div class="col partner-card rad   " data-aos="fade-in" data-aos-duration="1000"  data-aos-once="false" >
+          <img src="Media/Partner1.png" alt="" />
+        </div>
+        <div class="col partner-card rad"  data-aos="fade-in" data-aos-duration="2000"  data-aos-once="false" >
+          <img src="Media/Partner2.png" alt="" />
+        </div>
+        <div class="col partner-card rad"  data-aos="fade-in" data-aos-duration="3000"  data-aos-once="false" >
+          <img src="Media/Partner3.png" alt="" />
+        </div>
+        <div class="col partner-card rad"  data-aos="fade-in" data-aos-duration="4000"  data-aos-once="false" >
+          <img src="Media/Partner4.png" alt="" />
+        </div>
+        <div class="col partner-card rad"  data-aos="fade-in" data-aos-duration="5000"  data-aos-once="false">
+          <img src="Media/Partner5.png" alt="" />
+        </div>
+        <div class="col partner-card rad"  data-aos="fade-in" data-aos-duration="6000"  data-aos-once="false">
+          <img src="Media/Partner6.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- --------------------------- content ---------------------------- -->
-    </section>
+  <!-- ---------------------------  Footer ---------------------------- -->
+  <footer class="p-top-100 pb-4 fw-lighter fs-6 overflow-hidden">
+    <div class="container">
+      <div class="row align-items-center justify-content-center gap-4">
+        <div class="col d-flex justify-content-between flex-column gap-4  h-100">
+          <img src="Media/footer-logo.png" alt="" width="100%" />
+          <p>شراكة مستمرة وإعتمادية
+            لا محدودة من قبل مركز
+            ريادة الأعمال</p>
+          <div class="social d-flex w-100">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-between flex-column gap-2 h-100 text-end">
+          <div class="fw-bold ">تصفح</div>
+          <ul class="list-unstyled text-end p-0">
+            <li><a href="#" class="text-light">الرئيسية</a></li>
+            <li><a href="#" class="text-light">عنا</a></li>
+            <li><a href="#" class="text-light">ميديا</a></li>
+            <li><a href="#" class="text-light">اتصل بنا</a></li>
+            <li><a href="#" class="text-light">الأخبار</a></li>
+          </ul>
+        </div>
+        <div class="col d-flex w-100 flex-column  h-100 text-end fs-6 text-nowrap">
+          <div class="fw-bold ">الشهادات</div>
+          <ul class="list-unstyled p-0">
+            <li><a href="#" class="text-light">شهادة المدقق الداخلي المعتمد CIA
+              </a></li>
+            <li><a href="#" class="text-light">شهادة محترف ادوبي للتصميم ACP
+              </a></li>
+            <li><a href="#" class="text-light">شهادة الحاسب الآلي CBP-CT
+              </a></li>
+            <li><a href="#" class="text-light">شهادة إدارة المشاريع PMP
+              </a></li>
+            <li><a href="#" class="text-light">شهادات الأمن السيبراني</a></li>
+          </ul>
+        </div>
+        <div class="col d-flex justify-content-between flex-column gap-4  h-100 text-end">
+          <div class="fw-bold ">خليك علي تواصل</div>
+          <ul class="list-unstyled ">
+            <li><a href="#" class="text-light">
+                الرياض جدة <br />
+                المملكلة العربية السعودية.
 
-    <!-- ---------------------------  Media library ---------------------------- -->
-    <section id="media"></section>
+              </a></li>
+            <li><a href="#" class="text-light">
+                8001248877
+              </a></li>
+            <li><a href="#" class="text-light">
+                Customersaipa.edu.sa </a></li>
+          </ul>
+        </div>
+        <div class="col h-100">
+          <img src="Media/logo-transparent.png" alt="" width="80" class="img-fluid mb-4">
+          <p>لدينا الكثير من الشهادات
+            الأحترافيه والبرامج
+            المتعددة</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">© 2022. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      mirror: true
+    });
+  </script>
+<script src="js/main.js"></script>
+</body>
 
-    <!-- ---------------------------  Latest News ---------------------------- -->
-    <section id="news"></section>
-
-    <!-- ---------------------------  Partners ---------------------------- -->
-    <section id="partners"></section>
-
-    <!-- ---------------------------  Footer ---------------------------- -->
-    <footer></footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
