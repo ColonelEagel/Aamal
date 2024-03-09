@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("loading-screen").style.display = "none";
 });
 
-// Initialize AOS Library with configuration 
 AOS.init({
-  mirror: true  // Enable mirror effect
+  startEvent: 'DOMContentLoaded',
+  once: false,
+   mirror: true,
 });
-
 // Counting function
 (function startCounting() {
   // Select all elements with the 'counter' class
