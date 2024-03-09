@@ -1,3 +1,9 @@
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Hide the loading screen when the content is fully loaded
+  document.getElementById("loading-screen").style.display = "none";
+});
+
 // Initialize AOS Library with configuration 
 AOS.init({
   mirror: true  // Enable mirror effect
@@ -81,3 +87,5 @@ function setActive(element) {
     });
   });
 })();
+
+
